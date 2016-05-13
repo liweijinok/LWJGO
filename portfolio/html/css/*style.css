@@ -1,0 +1,25 @@
+/*
+*footer
+*/
+ul{
+  list-style: none outside;
+}
+.contact{
+  float: right;
+}
+.contact ul li:before {
+  content:'';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../images/contact.png');
+}
+.contact-name:before {
+	background-position: 0 -29px;
+}
+.contact-phone:before {
+	background-position: 0 -63px;
+}
+.contact-email:before{
+	background-position: 0 5px;
+}

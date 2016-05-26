@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <meta name="viewport" content="device-width, initial-scale=1.0 user-scalable=0">
     <meta name="description" content="LWJ`s DEMO">
     <meta name="author" content="LWJ">
     <title>Color Convert</title>
@@ -31,41 +31,49 @@
     </div>
     <form action="/hextorgb/" name="hexform" id="hexform" class="form-horizontal" method="post">
       <!-- Hex to RGB -->
-      <div class="container">
-        <div class="input">
+      <div class="container hex">
+        <div class="item">
           <label for="hex">Hex Code: </label>
-          <input name="hex" type="text" class="input-small" placeholder="Put hex code here"></input>
-          <div class="container-btn">
-            <button type="button" class="btn">Convert</button><br />
+          <div>
+            <input name="hex" type="text" class="input-small" placeholder="Put hex code here"></input>
           </div>
         </div>
-        <div>
+        <div class="item">
+          <button type="button" class="btn btn-primary">Convert</button><br />
+        </div>
+        <div class="item">
           <!-- Result -->
-          Result is here.
+          <!-- Color -->
+          <div class="result">
+            <input type="color" class="output" value="#ffffff" disabled="disabled"></input>
+          </div>
         </div>
       </div>
       <!-- RGB to Hex -->
       <div class="container">
-        <div>
+        <div class="item">
           <label for="red">Red: </label>
           <div>
-            <input name="red" type="text" class="input-small"></input>
+            <input name="red" type="text" class="input-small" placeholder="Red"></input>
           </div>
           <label for="green">Green: </label>
           <div>
-            <input name="green" type="text" class="input-small"></input>
+            <input name="green" type="text" class="input-small" placeholder="Green"></input>
           </div>
           <label for="blue">Blue: </label>
           <div>
-            <input name="blue" type="text" class="input-small"></input>
+            <input name="blue" type="text" class="input-small" placeholder="Blue"></input>
           </div>
         </div>
-        <div class="container-btn">
-          <button type="button" class="btn">Convert</button>
+        <div class="item">
+          <button type="button" class="btn btn-primary">Convert</button>
         </div>
-        <div>
+        <div class="item">
           <!-- Result -->
-          Result is here.
+          <!-- Color -->
+          <div class="result">
+            <input type="color" class="output" value="#ffffff" disabled="disabled"></input>
+          </div>
         </div>
       </div>
     </form>

@@ -31,21 +31,21 @@
     </div>
     <form action="/hextorgb/" name="hexform" id="hexform" class="form-horizontal" method="post">
       <!-- Hex to RGB -->
-      <div class="convert">
-        <div>
+      <div class="container">
+        <div class="input">
           <label for="hex">Hex Code: </label>
-          <div class="controls">
-            <input name="hex" type="text" class="input-small" placeholder="Put hex code here"></input>
+          <input name="hex" type="text" class="input-small" placeholder="Put hex code here"></input>
+          <div class="container-btn">
             <button type="button" class="btn">Convert</button><br />
           </div>
-          <div>
-            <!-- Result -->
-            Result is here.
-          </div>
+        </div>
+        <div>
+          <!-- Result -->
+          Result is here.
         </div>
       </div>
       <!-- RGB to Hex -->
-      <div class="convert">
+      <div class="container">
         <div>
           <label for="red">Red: </label>
           <div>
@@ -60,9 +60,13 @@
             <input name="blue" type="text" class="input-small"></input>
           </div>
         </div>
-      </div>
-      <div>
-        <button type="button" class="btn">Convert</button>
+        <div class="container-btn">
+          <button type="button" class="btn">Convert</button>
+        </div>
+        <div>
+          <!-- Result -->
+          Result is here.
+        </div>
       </div>
     </form>
     <!-- jQuery -->

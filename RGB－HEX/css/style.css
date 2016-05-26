@@ -7,7 +7,7 @@ Reset 万物之根源
 修补 针对异常状态
 */
 .main{
-  margin: 0 auto;
+  margin: 0 auto 1em;
   padding: 1em;
   width: 100%;
   background: rgb(237,237,237);
@@ -16,4 +16,15 @@ Reset 万物之根源
   margin: 0;
   color: rgb(216,158,86);
   text-align: center;
+}
+.container{
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  border: 0.25em rgb(237,237,237) solid;
+  border-radius: 10px;
+  text-align: center;
+}
+.container-btn{
+  display: inline-block;
 }

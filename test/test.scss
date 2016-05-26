@@ -1,0 +1,14 @@
+class{
+	border: 1px solid black;
+}
+class2{
+	@extend class;
+	font: 120%;
+}
+@mixin hi($border:1px){
+	float:left;
+	margin:0 auto;
+}
+h{
+	@include hi;
+}
